@@ -1,14 +1,21 @@
 {
-  "name": "swag/theme-skeleton",
-  "description": "Theme skeleton plugin",
+  "name": "emz/highflyers-theme",
+  "description": "Highflyers Test Theme",
   "type": "shopware-platform-plugin",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "EmzPlatformHighFlyersTheme\\": "src/"
-    }
-  },
-  "extra": {
+  "license": "proprietary",
+    "authors": [
+        {
+          "name": "8mylez GmbH",
+          "homepage": "https://8mylez.com"
+        }
+    ],
+    "minimum-stability": "RC",
+    "autoload": {
+        "psr-4": {
+            "EmzPlatformHighFlyersTheme\\": "src/"
+        }
+    },
+    "extra": {
     "shopware-plugin-class": "EmzPlatformHighFlyersTheme\\EmzPlatformHighFlyersTheme",
     "label": {
       "de-DE": "Theme EmzPlatformHighFlyersTheme plugin",

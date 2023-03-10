@@ -1,0 +1,103 @@
+.footer-top {
+    background-color: #f9f9f9;
+}
+
+.footer-blocks {
+    .footer-column-head-img {
+        margin-right: 10px;
+        margin-top: -27px;
+    }
+    .footer-column-head-headline {
+        color: #232323;
+        font-size: 17px;
+        text-align: left;
+        max-width: 58%;
+        display: inline-block;
+    }
+    .footer-block-col {
+        border-bottom: 2px solid white;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .footer-right-white-line {
+        border-right: 2px solid white;
+        margin-right: 30px;
+        margin-top: 80px;
+        width: 30px;
+    }
+    .footer-block-1 {
+        .footer-block-1-content {
+            margin-top: 25px;
+            font-size: 13px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .footer-blocks {
+        .footer-block-1 {
+            margin-top: 90px !important;
+
+            .footer-block-1-content {
+                width: 70%;
+            }
+        }
+        .footer-block-col {
+            margin-top: 20px;
+            margin-bottom: 9px;
+            margin-left: -20px;
+            width: 100vw;
+            min-height: 50px;
+            padding-bottom: 30px;
+
+            .uncollapse-footer-icon {
+                justify-content: right;
+                margin-top: -32px;
+            }
+            .collapse-footer-icon {
+                justify-content: right;
+                margin-top: -32px;
+            }
+        }
+        .footer-block-1 {
+            .footer-column-head-headline {
+                position: absolute;
+                top: -15px;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #fff;
+}
+
+.footer-vat {
+    padding-top: 10px;
+    padding-bottom: 16px;
+
+    .known-from {
+        font-weight: 500;
+        color: #232323;
+        margin-left: 15px;
+    }
+    img {
+        margin-left: 20px;
+        max-width: 100px;
+    }
+}
+
+.footer-copyright {
+    max-width: 732px;
+    font-weight: 500;
+    color: #232323;
+
+    a {
+        color: #232323;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}

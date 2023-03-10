@@ -1,0 +1,18 @@
+.js-header-main-sticky {
+    background-color: #ffff;
+    padding-top: 20px;
+    position: fixed;
+    min-width: 100%;
+    z-index: 100;
+    top: 0;
+    transform: translateY(-100%);
+
+    &.is--active {
+        transform: translateY(0);
+
+        .search-bar-col {
+            padding-left: 21px !important;
+            padding-right: 21px !important;
+        }
+    }
+}

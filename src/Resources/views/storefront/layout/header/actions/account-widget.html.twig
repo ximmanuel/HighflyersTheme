@@ -1,0 +1,15 @@
+{% sw_extends '@Storefront/storefront/layout/header/actions/account-widget.html.twig' %}
+
+{% block layout_header_actions_account_widget_dropdown_button %}
+    <button class="btn account-menu-btn header-actions-btn"
+            type="button"
+            id="accountWidget"
+            data-offcanvas-account-menu="true"
+            {{ dataBsToggleAttr }}="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="{{ "account.myAccount"|trans|striptags }}"
+            title="{{ "account.myAccount"|trans|striptags }}">
+    <svg xmlns="http://www.w3.org/2000/svg" width="19.811" height="24.389" viewBox="0 0 19.811 24.389"><defs><style>.a{fill:none;stroke:#232323;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><g transform="translate(0.75 0.75)"><ellipse class="a" cx="5.232" cy="5.232" rx="5.232" ry="5.232" transform="translate(3.924)"/><path class="a" d="M1194.232,53.134a9.156,9.156,0,0,1,18.311,0Z" transform="translate(-1194.232 -30.245)"/></g></svg>
+    </button>
+{% endblock %}

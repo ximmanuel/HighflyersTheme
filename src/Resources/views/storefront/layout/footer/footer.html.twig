@@ -1,0 +1,315 @@
+{% sw_extends '@Storefront/storefront/layout/footer/footer.html.twig' %}
+
+{% block layout_footer_inner_container %}
+    <div class="container-fluid footer-top">
+
+    {% block layout_footer_navigation %}
+        <div id="footerColumns"
+             class="row footer-columns"
+             data-collapse-footer="true"
+             role="list">
+        {% block layout_footer_navigation_hotline %}
+            {# <div class="col-md-4 footer-column js-footer-column">
+            {% block layout_footer_navigation_hotline_headline %}
+                <div class="footer-column-headline footer-headline js-footer-column-headline js-collapse-footer-column-trigger"
+                     id="collapseFooterHotlineTitle"
+                {{ dataBsTargetAttr }}="#collapseFooterHotline"
+                aria-expanded="true"
+                aria-controls="collapseFooterHotline"
+                role="listitem">
+                {{ 'footer.serviceHotlineHeadline'|trans|sw_sanitize }}
+                {% block layout_footer_navigation_hotline_icons %}
+                    <div class="footer-column-toggle">
+                                        <span class="footer-plus-icon">
+                                            {% sw_icon 'plus' %}
+                                        </span>
+                        <span class="footer-minus-icon">
+                                            {% sw_icon 'minus' %}
+                                        </span>
+                    </div>
+                {% endblock %}
+                </div> #}
+        {% endblock %}
+
+        {% block layout_footer_navigation_hotline_content %}
+            {# <div id="collapseFooterHotline"
+                     class="footer-column-content collapse js-footer-column-content footer-contact"
+                     aria-labelledby="collapseFooterHotlineTitle">
+                    <div class="footer-column-content-inner">
+                        <p class="footer-contact-hotline">
+                            {{ 'footer.serviceHotline'|trans|sw_sanitize }}
+                        </p>
+                    </div>
+                    <div class="footer-contact-form">
+                        {{ 'footer.serviceContactLink'|trans({
+                            '%url%': path('frontend.cms.page', { id: config('core.basicInformation.contactPage') })
+                        })|raw }}
+                    </div>
+                </div> #}
+        {% endblock %}
+
+
+        {% block layout_footer_navigation_columns %}
+            <div class="container-fluid footer-blocks">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-block-col footer-block-1 col-md">
+                            <img class="footer-column-head-img" src="https://via.placeholder.com/47x47">
+                            <b class="footer-column-head-headline">{{ "EmzHighflyers.footer.blocks.headline1"|trans|striptags }}</b>
+                            <span class="footer-toggle-content d-md-none" data-collapse-footer="true">
+                                <span class="uncollapse-footer-icon d-flex" id="UnCollapseFooterIcon1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="16">
+                                        <path d="M12 21.35l-9.17-9.18a2 2 0 0 1 2.83-2.83L12 15.68l6.34-6.34a2 2 0 1 1 2.83 2.83L12 21.35z"/>
+                                    </svg>
+                                </span>
+                                <span class="collapse-footer-icon d-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="16" transform="rotate(180)">
+                                        <path d="M12 21.35l-9.17-9.18a2 2 0 0 1 2.83-2.83L12 15.68l6.34-6.34a2 2 0 1 1 2.83 2.83L12 21.35z"/>
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="footer-block-1-content footer-block-content d-none d-md-block">
+                                <div class="mb-2">
+                                    <img src="https://via.placeholder.com/29x29">
+                                    <b>{{ "EmzHighflyers.footer.blocks.block1-content.phone-number"|trans|striptags }}</b>
+                                </div>
+                                <div class="mb-2">
+                                    <img src="https://via.placeholder.com/29x29">
+                                    <b>{{ "EmzHighflyers.footer.blocks.block1-content.fax-number"|trans|striptags }}</b>
+                                </div>
+                                <div class="mb-2">
+                                    <img src="https://via.placeholder.com/29x29">
+                                    <b>{{ "EmzHighflyers.footer.blocks.block1-content.email"|trans|striptags }}</b>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <img src="https://via.placeholder.com/29x29">
+                                    <b>{{ "EmzHighflyers.footer.blocks.block1-content.location"|trans|striptags }}</b>
+                                </div>
+
+                                <span class="to-contact-form">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" width="24" height="24">
+                                      <path d="M2,5 L8,5 M8,5 L6,3 M8,5 L6,7" stroke={{ theme_config('sw-color-brand-primary')}} stroke-width="1" fill="none"/>
+                                    </svg>
+                                    <a href="#"><b>{{ "EmzHighflyers.footer.blocks.block1-content.to-contact-form"|trans|striptags }}</b></a>
+                                </span>
+                                <br><br>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-md-block footer-right-white-line">
+                        </div>
+
+                        <div class="footer-block-col footer-block-2 col-md">
+                            <img class="footer-column-head-img" src="https://via.placeholder.com/47x47">
+                            <b class="footer-column-head-headline">{{ "EmzHighflyers.footer.blocks.headline2"|trans|striptags }}</b>
+                            <span class="footer-toggle-content d-md-none" data-collapse-footer="true">
+                                <span class="uncollapse-footer-icon d-flex" id="UnCollapseFooterIcon2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="16">
+                                        <path d="M12 21.35l-9.17-9.18a2 2 0 0 1 2.83-2.83L12 15.68l6.34-6.34a2 2 0 1 1 2.83 2.83L12 21.35z"/>
+                                    </svg>
+                                </span>
+                                <span class="collapse-footer-icon d-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="16" transform="rotate(180)">
+                                        <path d="M12 21.35l-9.17-9.18a2 2 0 0 1 2.83-2.83L12 15.68l6.34-6.34a2 2 0 1 1 2.83 2.83L12 21.35z"/>
+                                    </svg>
+                                </span>
+                            </span>
+                            <div class="footer-block-2-content footer-block-content d-none d-md-block">
+                                <b>SOON</b>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-md-block footer-right-white-line">
+                        </div>
+
+                        <div class="footer-block-col footer-block-3 col-md">
+                            <img class="footer-column-head-img" src="https://via.placeholder.com/47x47">
+                            <b class="footer-column-head-headline">{{ "EmzHighflyers.footer.blocks.headline3"|trans|striptags }}</b>
+                        </div>
+
+                        <div class="d-none d-md-block footer-right-white-line">
+                        </div>
+
+                        <div class="footer-block-col footer-block-4 col-md">
+                            <img class="footer-column-head-img" src="https://via.placeholder.com/47x47">
+                            <b class="footer-column-head-headline">{{ "EmzHighflyers.footer.blocks.headline4"|trans|striptags }}</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% for root in page.footer.navigation.tree %}
+                {% block layout_footer_navigation_column %}
+                    <div class="col-md-4 footer-column js-footer-column">
+                    {% block layout_footer_navigation_information_headline %}
+                        <div class="footer-column-headline footer-headline js-collapse-footer-column-trigger"
+                        {{ dataBsTargetAttr }}="#collapseFooterTitle{{ loop.index }}"
+                        aria-expanded="true"
+                        aria-controls="collapseFooter{{ loop.index }}">
+
+                        {% if root.category.type == 'folder' %}
+                            {{ root.category.translated.name }}
+                        {% else %}
+                            <a href="{{ category_url(root.category) }}"
+                               {% if category_linknewtab(root.category) %}target="_blank"{% endif %}
+                               title="{{ root.category.translated.name }}">
+                                {{ root.category.translated.name }}
+                            </a>
+                        {% endif %}
+                        {% block layout_footer_navigation_information_icons %}
+                            <div class="footer-column-toggle">
+                                                <span class="footer-plus-icon">
+                                                    {% sw_icon 'plus' %}
+                                                </span>
+                                <span class="footer-minus-icon">
+                                                    {% sw_icon 'minus' %}
+                                                </span>
+                            </div>
+                        {% endblock %}
+                        </div>
+                    {% endblock %}
+
+                    {% block layout_footer_navigation_information_content %}
+                        <div id="collapseFooter{{ loop.index }}"
+                             class="footer-column-content collapse js-footer-column-content"
+                             aria-labelledby="collapseFooterTitle{{ loop.index }}">
+                            <div class="footer-column-content-inner">
+                                {% block layout_footer_navigation_information_links %}
+                                    <ul class="list-unstyled">
+                                        {% for treeItem in root.children %}
+                                            {% set category = treeItem.category %}
+                                            {% set name = category.translated.name %}
+
+                                            {# @deprecated tag:v6.5.0 - Use "category.translated.externalLink" directly or category_url function instead. #}
+                                            {% set externalLink = category.translated.externalLink %}
+
+                                            {% block layout_footer_navigation_information_link_item %}
+                                                <li class="footer-link-item">
+                                                    {% block layout_footer_navigation_information_link %}
+                                                        {% if category.type == 'folder' %}
+                                                            <div>{{ name }}</div>
+                                                        {% else %}
+                                                            <a class="footer-link"
+                                                               href="{{ category_url(category) }}"
+                                                               {% if category_linknewtab(category) %}target="_blank"{% endif %}
+                                                               title="{{ name }}">
+                                                                {{ name }}
+                                                            </a>
+                                                        {% endif %}
+                                                    {% endblock %}
+                                                </li>
+                                            {% endblock %}
+                                        {% endfor %}
+                                    </ul>
+                                {% endblock %}
+                            </div>
+                        </div>
+                    {% endblock %}
+                    </div>
+                {% endblock %}
+            {% endfor %}
+        {% endblock %}
+        </div>
+    {% endblock %}
+
+    {% block layout_footer_payment_shipping_logos %}
+        {# <div class="footer-logos">
+            {% block layout_footer_payment_logos %}
+                {% for paymentMethod in page.salesChannelPaymentMethods %}
+                    {% block layout_footer_payment_logo %}
+                        {% if paymentMethod.media %}
+                            <div class="footer-logo is-payment">
+                                {% sw_thumbnails 'footer-payment-image-thumbnails' with {
+                                    media: paymentMethod.media,
+                                    sizes: {
+                                        'default': '100px'
+                                    },
+                                    attributes: {
+                                        'class': 'img-fluid footer-logo-image',
+                                        'alt': (paymentMethod.media.translated.alt ?: paymentMethod.translated.name),
+                                        'title': (paymentMethod.media.translated.title ?: paymentMethod.translated.name)
+                                    }
+                                } %}
+                            </div>
+                        {% endif %}
+                    {% endblock %}
+                {% endfor %}
+            {% endblock %}
+
+            {% block layout_footer_shipping_logos %}
+                {% for shippingMethod in page.salesChannelShippingMethods %}
+                    {% block layout_footer_shipping_logo %}
+                        {% if shippingMethod.media %}
+                            <div class="footer-logo is-shipping">
+                                {% sw_thumbnails 'footer-shipping-image-thumbnails' with {
+                                    media: shippingMethod.media,
+                                    sizes: {
+                                        'default': '100px'
+                                    },
+                                    attributes: {
+                                        'class': 'img-fluid footer-logo-image',
+                                        'alt': (shippingMethod.media.translated.alt ?: shippingMethod.translated.name),
+                                        'title': (shippingMethod.media.translated.title ?: shippingMethod.translated.name)
+                                    }
+                                } %}
+                            </div>
+                        {% endif %}
+                    {% endblock %}
+                {% endfor %}
+            {% endblock %}
+        </div>#}
+    {% endblock %}
+
+    </div>
+
+    {% block layout_footer_bottom %}
+        <div class="footer-bottom">
+
+            {% block layout_footer_vat %}
+                <div class="footer-vat">
+                    <span class="known-from">{{ "EmzHighflyers.footer.known-from"|trans|striptags }}</span>
+                    <br class="d-sm-none">
+                    <img src="{{theme_config('first-footer-known-from-img')}}">
+                    <img src="{{theme_config('second-footer-known-from-img')}}">
+                    <img src="{{theme_config('third-footer-known-from-img')}}">
+                    <img src="{{theme_config('fourth-footer-known-from-img')}}">
+                    <img src="{{theme_config('fifth-footer-known-from-img')}}">
+                    <img src="{{theme_config('sixth-footer-known-from-img')}}">
+                    <img src="{{theme_config('seventh-footer-known-from-img')}}">
+                </div>
+            {% endblock %}
+
+            {% block layout_footer_copyright %}
+                <div class="footer-copyright container">
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder1"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder2"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder3"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder4"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder5"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder6"|trans|striptags }}</a>
+
+                    <br class="d-sm-none">
+                    <br class="d-sm-none">
+
+                    <a class="d-none d-md-inline">•</a>
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder7"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder8"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder9"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder10"|trans|striptags }}</a>
+                    •
+                    <a href="#">{{ "EmzHighflyers.footer.bottom.placeholder11"|trans|striptags }}</a>
+                    •
+                    Copyright &copy; {{ "now"|date("Y") }} HIGHFLYERS Werbeartikel GmbH
+                </div>
+            {% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}

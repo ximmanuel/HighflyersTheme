@@ -1,0 +1,42 @@
+{% block layout_header_top_bar %}
+    <div class="top-bar">
+        <nav class="top-bar-nav">
+            <div class="container d-none d-md-flex">
+                <div class="row w-100 justify-content-between">
+                    <span class="top-bar-text-1 order-1">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="{{theme_config('FirstTopBarIcon')}}" class="mr-2">
+                            {{ "EmzHighflyers.header.topbar.placeholder1"|trans|striptags }}</a>
+                    </span>
+                    <span class="top-bar-text-2 order-2">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="{{theme_config('SecondTopBarIcon')}}" class="mr-2">
+                            {{ "EmzHighflyers.header.topbar.placeholder2"|trans|striptags }}</a>
+                    </span>
+                    <span class="top-bar-text-3 order-3">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="{{theme_config('ThirdTopBarIcon')}}" class="mr-2">
+                            {{ "EmzHighflyers.header.topbar.placeholder3"|trans|striptags }}</a>
+                    </span>
+                    <span class="top-bar-text-4 order-4">
+                        <a href="#" class="d-flex align-items-center">
+                            <img src="{{theme_config('FourthTopBarIcon')}}" class="mr-2">
+                            {{ "EmzHighflyers.header.topbar.placeholder4"|trans|striptags }}</a>
+                    </span>
+                </div>
+            </div>
+
+
+            {% block layout_header_top_bar_language %}
+                {% sw_include '@Storefront/storefront/layout/header/actions/language-widget.html.twig' %}
+            {% endblock %}
+
+            {% block layout_header_top_bar_currency %}
+                {% sw_include '@Storefront/storefront/layout/header/actions/currency-widget.html.twig' %}
+            {% endblock %}
+
+            {# @deprecated tag:v6.5.0 - will be removed, has been moved to footer #}
+            {% block layout_header_top_bar_service %}{% endblock %}
+        </nav>
+    </div>
+{% endblock %}

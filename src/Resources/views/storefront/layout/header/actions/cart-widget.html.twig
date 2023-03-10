@@ -1,0 +1,6 @@
+{% block layout_header_actions_cart_widget %}
+    <span class="header-cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.75" height="25.14" viewBox="0 0 20.75 25.14"><defs><style>.a,.c,.d{fill:none;}.b{clip-path:url(#a);}.c,.d{stroke:#232323;stroke-width:1.5px;}.d{stroke-linecap:round;}</style><clipPath id="a"><path class="a" d="M0,5.7H20.75v-25.14H0Z" transform="translate(0 19.441)"/></clipPath></defs><g class="b" transform="translate(0 0)"><g transform="translate(1.038 6.101)"><path class="c" d="M.275,0-.937,18.069H17.737L16.526,0Z" transform="translate(0.937)"/></g><g transform="translate(5.282 0.969)"><path class="d" d="M2.309,1.745V-.9A5.072,5.072,0,0,0-2.784-5.953,5.072,5.072,0,0,0-7.876-.9V1.745" transform="translate(7.876 5.953)"/></g></g></svg>
+    </span>
+    <span class="badge {{ bgClass }}-primary header-cart-badge-icon">{{ page.cart.lineItems|length }}</span>
+{% endblock %}

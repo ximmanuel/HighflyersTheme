@@ -18,5 +18,282 @@
   "asset": [
     "@Storefront",
     "app/storefront/src/assets"
-  ]
+    ],
+    "config": {
+        "blocks": {
+            "themeColors": {
+                "label": {
+                    "de-DE": "Theme-Farben",
+                    "en-GB": "Theme colors"
+                }
+            },
+            "typography": {
+                "label": {
+                    "de-DE": "Typografie",
+                    "en-GB": "Typography"
+                }
+            },
+            "GeneralBlock": {
+                "label":{
+                    "de-DE": "Generelle Informationen",
+                    "en-GB": "General information"
+                }
+            },
+            "TopBarBlock": {
+                "label":{
+                    "de-DE": "Top Bar",
+                    "en-GB": "Top Bar"
+                }
+            },
+            "footer-block": {
+                "label":{
+                    "de-DE": "Unterteil",
+                    "en-GB": "Footer"
+                }
+            }
+        },
+        "fields": {
+            "EmailAdress": {
+                "label": {
+                    "de-DE": "Kontakt Email-Adresse",
+                    "en-GB": "Contact email address"
+                },
+                "type": "text",
+                "value": "contact@example.com",
+                "scss": false,
+                "editable": true,
+                "block": "GeneralBlock"
+            },
+            "FaxAdress": {
+                "label": {
+                    "de-DE": "Fax-Adresse",
+                    "en-GB": "Fax adress"
+                },
+                "type": "text",
+                "value": "+49 (0) 80 84 . 4 13 11 - 11",
+                "scss": false,
+                "editable": true,
+                "block": "GeneralBlock"
+            },
+            "TelephoneNumber": {
+                "label": {
+                    "de-DE": "Telefonnummer",
+                    "en-GB": "Telephone number"
+                },
+                "type": "text",
+                "value": "+49 80 84 . 4 13 11 - 0",
+                "scss": false,
+                "editable": true,
+                "block": "GeneralBlock"
+            },
+            "activateStickyHeader": {
+                "label": {
+                    "en-GB": "Enable Sticky Header",
+                    "de-DE": "Aktiviere klebrigen Kopfteil"
+                },
+                "type": "switch",
+                "custom": {
+                    "bordered": true
+                },
+                "value": false,
+                "editable": true,
+                "block": "GeneralBlock"
+            },
+            "showOnScrollPosition": {
+                "label": {
+                    "en-GB": "Sticky Header Scrollposition",
+                    "de-DE": "Klebriger Kopfteil Position"
+                },
+                "type": "int",
+                "value": 500,
+                "editable": true,
+                "block": "GeneralBlock"
+            },
+            "sw-color-brand-primary": {
+                "label": {
+                    "de-DE": "Hauptfarbe",
+                    "en-GB": "Primary color"
+                },
+                "type": "color",
+                "value": "#dd0021",
+                "scss": true,
+                "editable": true,
+                "block": "themeColors"
+            },
+            "sw-color-brand-secondary": {
+                "label": {
+                    "de-DE": "Sekundärfarbe",
+                    "en-GB": "Secondary color"
+                },
+                "type": "color",
+                "value": "#c3001d",
+                "scss": true,
+                "editable": true,
+                "block": "themeColors"
+            },
+            "sw-font-family-base": {
+                "label": {
+                    "de-DE": "Schriftart",
+                    "en-GB": "Font family"
+                },
+                "type": "text",
+                "value": "'Montserrat', sans-serif",
+                "scss": true,
+                "editable": true,
+                "block": "typography"
+            },
+            "FirstTopBarIcon": {
+                "label": {
+                    "de-DE": "Erstes Top Bar Bild",
+                    "en-GB": "First top bar icon"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "TopBarBlock"
+            },
+            "SecondTopBarIcon": {
+                "label": {
+                    "de-DE": "Zweites Top Bar Bild",
+                    "en-GB": "Second top bar icon"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "TopBarBlock"
+            },
+            "ThirdTopBarIcon": {
+                "label": {
+                    "de-DE": "Drittes Top Bar Bild",
+                    "en-GB": "Third top bar icon"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "TopBarBlock"
+            },
+            "FourthTopBarIcon": {
+                "label": {
+                    "de-DE": "Viertes Top Bar Bild",
+                    "en-GB": "Fourth top bar icon"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "TopBarBlock"
+            },
+            "first-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Erstes Footer 'Bekannt aus' Bild",
+                    "en-GB": "First footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "second-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Zweites Footer 'Bekannt aus' Bild",
+                    "en-GB": "Second footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "third-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Drittes Footer 'Bekannt aus' Bild",
+                    "en-GB": "Third footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "fourth-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Viertes Footer 'Bekannt aus' Bild",
+                    "en-GB": "Fourth footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "fifth-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Fuenftes Footer 'Bekannt aus' Bild",
+                    "en-GB": "Fifth footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "sixth-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Sechstes Footer 'Bekannt aus' Bild",
+                    "en-GB": "Sixth footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "seventh-footer-known-from-img": {
+                "label": {
+                    "de-DE": "Siebtes Footer 'Bekannt aus' Bild",
+                    "en-GB": "Seventh footer 'known from' image"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "known-from-images"
+            },
+            "first-footer-social-media-icon": {
+                "label": {
+                    "de-DE": "Erstes Footer Soziale Medien Icon",
+                    "en-GB": "First footer social media icon"
+                },
+                "type": "media",
+                "value": "",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "social-media-icons"
+            },
+            "first-footer-social-media-link": {
+                "label": {
+                    "de-DE": "Erstes Footer Soziale Medien Link",
+                    "en-GB": "First footer social media link"
+                },
+                "type": "text",
+                "value": "facebook.com",
+                "scss": false,
+                "editable": true,
+                "block": "footer-block",
+                "section": "social-media-links"
+            }
+        }
+    }
 }

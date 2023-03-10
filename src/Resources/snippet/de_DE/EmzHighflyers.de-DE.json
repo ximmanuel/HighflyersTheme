@@ -1,0 +1,44 @@
+{
+    "EmzHighflyers": {
+        "header": {
+            "topbar": {
+                "placeholder1": "PERSÖNLICHE BERATUNG",
+                "placeholder2": "ONLINEKALKULATOR",
+                "placeholder3": "100.000+ WERBEARTIKEL",
+                "placeholder4": "TOP BEWERTUNGEN"
+            }
+        },
+        "footer": {
+            "blocks": {
+                "headline1": "HOTLINE & KONTAKT",
+                "headline2": "ZAHLUNGEN- & VERSANDARTEN",
+                "headline3": "AUSGEZEICHNET EINKAUFEN",
+                "headline4": "KATALOGE ONLINE BLÄTTERN",
+
+                "block1-content": {
+                    "phone-number": "+49 (0) 80 84 . 4 13 11 - 0",
+                    "fax-number": "+49 (0) 80 84 . 4 13 11 - 11",
+                    "email": "info@werbeartikel-discount",
+                    "location": "HIGHFLYERS Werbeartikel GmbH Sonnenfeld 13 84416 Taufkirchen Deutschland",
+                    "to-contact-form": "ZUM KONTAKTFORMULAR"
+                }
+            },
+
+            "known-from": "Bekannt aus",
+
+            "bottom": {
+                "placeholder1": "Kontakt",
+                "placeholder2": "Über uns",
+                "placeholder3": "Jobs",
+                "placeholder4": "FAQ's und Hilfe",
+                "placeholder5": "Trends Herbst und Winter 2020/2021",
+                "placeholder6": "News",
+                "placeholder7": "Impressum",
+                "placeholder8": "AGB",
+                "placeholder9": "Widerruf",
+                "placeholder10": "Datenschutz",
+                "placeholder11": "Informationen nach BATTG"
+            }
+        }
+    }
+}

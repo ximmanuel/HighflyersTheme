@@ -1,0 +1,27 @@
+{% block layout_header_actions_wishlist_widget %}
+    {% set showCounter = showCounter ?? true %}
+
+    {% if showCounter %}
+        <span class="header-wishlist-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19.811" height="24.389" viewBox="0 0 19.811 24.389"><defs><style>.a{fill:none;stroke:#232323;stroke-miterlimit:10;stroke-width:1.5px;}</style></defs><g transform="translate(0.75 0.75)"><ellipse class="a" cx="5.232" cy="5.232" rx="5.232" ry="5.232" transform="translate(3.924)"/><path class="a" d="M1194.232,53.134a9.156,9.156,0,0,1,18.311,0Z" transform="translate(-1194.232 -30.245)"/></g></svg>
+        </span>
+    {% endif %}
+
+    {% set wishlistStorageOptions = {
+        listPath: path('frontend.wishlist.product.list'),
+        mergePath: path('frontend.wishlist.product.merge'),
+        tokenMergePath: sw_csrf('frontend.wishlist.product.merge', {'mode': 'token'}),
+        pageletPath: path('frontend.wishlist.product.merge.pagelet'),
+        tokenPageletPath: sw_csrf('frontend.wishlist.product.merge.pagelet', {'mode': 'token'}),
+    } %}
+
+    {% set wishlistWidgetOptions = { showCounter: showCounter } %}
+
+    <span class="badge {{ bgClass }}-primary header-wishlist-badge d-sm-none"
+          id="wishlist-basket"
+          data-wishlist-storage="true"
+          data-wishlist-storage-options="{{ wishlistStorageOptions|json_encode }}"
+          data-wishlist-widget="true"
+          data-wishlist-widget-options="{{ wishlistWidgetOptions|json_encode }}"
+    ></span>
+{% endblock %}
