@@ -1,3 +1,17 @@
+.footer-news-letter-container {
+    background-color: #DD0021;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .footer-news-letter-ad-text {
+        max-width: 450px;
+    }
+    .footer-news-letter-form {
+        display: flex;
+        align-items: center;
+    }
+}
+
 .footer-top {
     background-color: #f9f9f9;
 }
